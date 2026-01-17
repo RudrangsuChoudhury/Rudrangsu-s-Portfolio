@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full-stack developer passionate about building scalable web applications. View my projects, experience, and skills.">
-    <meta name="keywords" content="developer, portfolio, web development, full-stack, FAANG">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="Your Name - Developer Portfolio">
-    <meta property="og:description" content="Hire me for web development projects">
-    <title>Your Name - Full-Stack Developer Portfolio</title>
+    <title>Your Name - Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-content">
                 <div class="logo">
-                    <a href="#home">Portfolio</a>
+                    <h1>Your Portfolio</h1>
                 </div>
-                <ul class="nav-links">
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -38,28 +40,12 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm Your Name</h1>
-                <p class="hero-subtitle">Full-Stack Developer | MERN Stack | Building scalable web applications</p>
+                <p class="hero-subtitle">Full Stack Developer | Web Designer | Problem Solver</p>
                 <p class="hero-description">
-                    I transform complex problems into elegant, user-centric solutions. Currently focused on mastering system design and contributing to open-source projects.
+                    I build modern web applications with React, Node.js, and MongoDB. 
+                    Passionate about creating user-friendly solutions and solving complex problems.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Projects Built</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Technologies</span>
-                    </div>
-                </div>
+                <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -71,196 +57,128 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a full-stack developer based in Chennai with a passion for building high-performance web applications. With a background in Computer Science and hands-on experience at Zifo, I've developed strong skills in modern web technologies.
+                        I'm a passionate full-stack developer with 2+ years of professional experience building scalable web applications. 
+                        I love solving complex problems and learning new technologies.
                     </p>
                     <p>
-                        My journey in tech started with a curiosity about how things work. Today, I focus on writing clean, maintainable code and understanding system design principles that power scalable applications.
+                        Currently working at Zifo as an Associate Analyst, where I work on cutting-edge projects 
+                        using modern web technologies and leading performance optimization initiatives.
                     </p>
                     <p>
-                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or planning my next adventure across South India.
+                        When I'm not coding, you'll find me exploring astronomy, gaming, or planning my next travel adventure. 
+                        I'm actively preparing for FAANG interviews and contributing to open-source projects.
                     </p>
                 </div>
-                <div class="skills-grid">
-                    <h3>Core Skills</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Problem Solving</span>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Projects Built</p>
+                    </div>
+                    <div class="stat">
+                        <h3>8.2</h3>
+                        <p>College CGPA</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+   
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h3>Project One</h3>
+                    </div>
+                    <div class="project-content">
                         <h3>E-Commerce Platform</h3>
-                        <div class="project-links">
-                            <a href="#" aria-label="View Live Demo">Live Demo</a>
-                            <a href="#" aria-label="View Source Code">GitHub</a>
+                        <p>Full-stack e-commerce application with user authentication, product management, and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
                         </div>
-                    </div>
-                    <p class="project-description">
-                        Full-stack e-commerce platform with product catalog, shopping cart, and payment integration. Built with React, Node.js, and MongoDB.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                        <span>Stripe API</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Handles 100+ daily transactions with 99.9% uptime
+                        <div class="project-links">
+                            <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                            <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Real-Time Chat Application</h3>
-                        <div class="project-links">
-                            <a href="#" aria-label="View Live Demo">Live Demo</a>
-                            <a href="#" aria-label="View Source Code">GitHub</a>
+                <!-- Project Card 2 -->
+                <div class="project-card fade-in">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h3>Project Two</h3>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management tool with real-time updates, team collaboration, and progress tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Tailwind CSS</span>
                         </div>
-                    </div>
-                    <p class="project-description">
-                        WebSocket-based real-time messaging app with user authentication, typing indicators, and message history. Deployed on AWS.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Socket.io</span>
-                        <span>Express</span>
-                        <span>AWS</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> 500+ concurrent users, sub-100ms latency
+                        <div class="project-links">
+                            <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                            <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Task Management Dashboard</h3>
-                        <div class="project-links">
-                            <a href="#" aria-label="View Live Demo">Live Demo</a>
-                            <a href="#" aria-label="View Source Code">GitHub</a>
+                <!-- Project Card 3 -->
+                <div class="project-card fade-in">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h3>Project Three</h3>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather application with location-based forecasts, weather alerts, and beautiful visualizations.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">Chart.js</span>
                         </div>
-                    </div>
-                    <p class="project-description">
-                        Responsive task management tool with drag-and-drop functionality, real-time updates, and team collaboration features.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Redux</span>
-                        <span>Tailwind CSS</span>
-                        <span>Firebase</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Improved team productivity by 40%
+                        <div class="project-links">
+                            <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                            <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Data Visualization Dashboard</h3>
-                        <div class="project-links">
-                            <a href="#" aria-label="View Live Demo">Live Demo</a>
-                            <a href="#" aria-label="View Source Code">GitHub</a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Analytics dashboard with interactive charts, real-time data updates, and custom report generation using Chart.js and D3.js.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Chart.js</span>
-                        <span>D3.js</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Processes 1M+ data points in real-time
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Machine Learning API</h3>
-                        <div class="project-links">
-                            <a href="#" aria-label="View Live Demo">Live Demo</a>
-                            <a href="#" aria-label="View Source Code">GitHub</a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        RESTful API for ML model predictions with comprehensive documentation, rate limiting, and containerized deployment using Docker.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>Docker</span>
-                        <span>TensorFlow</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> 99.8% prediction accuracy, 200ms avg response time
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Open Source Contribution</h3>
-                        <div class="project-links">
-                            <a href="#" aria-label="View Repository">Repository</a>
-                            <a href="#" aria-label="View Pull Request">PR</a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Active contributor to open-source projects. Implemented performance optimizations that reduced bundle size by 30% and improved load times.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Performance</span>
-                        <span>Optimization</span>
-                        <span>Community</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> 50+ merged PRs, 1K+ GitHub stars
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
-    <!-- Experience Section -->
+     <!-- Experience & Education Section -->
     <section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title">Experience & Education</h2>
-            <div class="experience-content">
+            
+            <div class="experience-grid">
                 <!-- Work Experience -->
-                <div class="experience-block">
-                    <h3>Work Experience</h3>
+                <div class="experience-column">
+                    <h3 class="experience-heading">Work Experience</h3>
                     
-                    <div class="experience-item">
+                    <!-- Job 1 -->
+                    <div class="experience-card fade-in">
                         <div class="experience-header">
-                            <h4>Associate Analyst at Zifo</h4>
-                            <span class="experience-date">Jan 2022 - Present</span>
+                            <h4 class="job-title">Associate Analyst</h4>
+                            <p class="company-name">Zifo</p>
+                            <span class="date-badge">Jan 2022 - Present</span>
                         </div>
-                        <p class="experience-description">
+                        <p class="job-description">
                             Developed and maintained full-stack web applications using modern JavaScript frameworks. Led performance optimization initiatives that improved application load times by 45%. Collaborated with cross-functional teams to deliver features on schedule.
                         </p>
-                        <ul class="experience-highlights">
+                        <ul class="achievement-list">
                             <li>Built responsive UIs with React and modern CSS</li>
                             <li>Developed RESTful APIs using Node.js and Express</li>
                             <li>Optimized database queries, reducing response time by 40%</li>
@@ -268,15 +186,16 @@
                         </ul>
                     </div>
 
-                    <div class="experience-item">
+                    <!-- Job 2 -->
+                    <div class="experience-card fade-in">
                         <div class="experience-header">
-                            <h4>Frontend Developer Intern</h4>
-                            <span class="experience-date">Jun 2021 - Dec 2021</span>
+                            <h4 class="job-title">Frontend Developer Intern</h4>
+                            <span class="date-badge">Jun 2021 - Dec 2021</span>
                         </div>
-                        <p class="experience-description">
+                        <p class="job-description">
                             Developed responsive web interfaces and contributed to component library documentation. Gained hands-on experience with version control, testing, and deployment workflows.
                         </p>
-                        <ul class="experience-highlights">
+                        <ul class="achievement-list">
                             <li>Created reusable React components</li>
                             <li>Wrote unit tests using Jest and React Testing Library</li>
                             <li>Implemented responsive designs following Figma mockups</li>
@@ -284,36 +203,37 @@
                     </div>
                 </div>
 
-                <!-- Education -->
-                <div class="experience-block">
-                    <h3>Education</h3>
+                <!-- Education & Certifications -->
+                <div class="experience-column">
+                    <h3 class="experience-heading">Education</h3>
                     
-                    <div class="experience-item">
+                    <!-- Education -->
+                    <div class="experience-card fade-in">
                         <div class="experience-header">
-                            <h4>Bachelor of Technology in Computer Science</h4>
-                            <span class="experience-date">2021</span>
+                            <h4 class="job-title">Bachelor of Technology</h4>
+                            <p class="company-name">Computer Science</p>
+                            <span class="date-badge">2021</span>
                         </div>
-                        <p class="experience-description">
+                        <p class="job-description">
                             Graduated with distinction. Focused on data structures, algorithms, web technologies, and software engineering principles.
                         </p>
-                        <ul class="experience-highlights">
-                            <li>CGPA: 8.2/10</li>
+                        <ul class="achievement-list">
+                            <li><strong>CGPA:</strong> 8.2/10</li>
                             <li>Dean's List - 3 consecutive semesters</li>
-                            <li>Relevant Coursework: DSA, DBMS, Web Dev, System Design</li>
+                            <li><strong>Relevant Coursework:</strong> DSA, DBMS, Web Dev, System Design</li>
                         </ul>
                     </div>
-                </div>
 
-                <!-- Certifications -->
-                <div class="experience-block">
-                    <h3>Certifications & Learning</h3>
-                    
-                    <div class="experience-item">
+                    <!-- Certifications -->
+                    <div class="experience-card fade-in">
                         <div class="experience-header">
-                            <h4>Ongoing Learning</h4>
-                            <span class="experience-date">2024 - Present</span>
+                            <h4 class="job-title">Certifications & Learning</h4>
+                            <span class="date-badge">2024 - Present</span>
                         </div>
-                        <ul class="experience-highlights">
+                        <p class="job-description">
+                            Continuous learning and professional development to prepare for FAANG opportunities.
+                        </p>
+                        <ul class="achievement-list">
                             <li>System Design Masterclass - Preparing for FAANG interviews</li>
                             <li>Advanced Data Structures & Algorithms</li>
                             <li>AWS Solutions Architect Associate (In Progress)</li>
@@ -325,52 +245,135 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 & SASS</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Python</li>
+                        <li>REST APIs</li>
+                        <li>Authentication</li>
+                        <li>Server Management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Database & Tools</h3>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Other</h3>
+                    <ul>
+                        <li>Web Performance</li>
+                        <li>SEO Optimization</li>
+                        <li>Agile Methodology</li>
+                        <li>UI/UX Design</li>
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="contact-intro">
-                I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
-            </p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'd love to hear from you. Send me a message!</p>
             
-            <div class="contact-content">
-                <div class="contact-methods">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <a href="mailto:yourname@email.com">yourname@email.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Location</h4>
-                        <p>Chennai, India</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Social Links</h4>
-                        <div class="social-links">
-                            <a href="#" aria-label="GitHub Profile">GitHub</a>
-                            <a href="#" aria-label="LinkedIn Profile">LinkedIn</a>
-                            <a href="#" aria-label="Twitter Profile">Twitter</a>
-                        </div>
-                    </div>
+            <form class="contact-form" id="contactForm">
+                <div id="formErrors" class="form-errors" style="display: none;">
+                    <ul class="error-list" id="errorList"></ul>
                 </div>
 
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="form-control" 
+                        placeholder="John Doe"
+                        required
+                    >
+                    <span class="form-error" id="nameError"></span>
+                </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-control" 
+                        placeholder="john@example.com"
+                        required
+                    >
+                    <span class="form-error" id="emailError"></span>
+                </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                    </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject (Optional)</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        class="form-control" 
+                        placeholder="How can I help?"
+                    >
+                </div>
 
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        class="form-control" 
+                        rows="5" 
+                        placeholder="Your message here..."
+                        required
+                    ></textarea>
+                    <span class="form-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other Ways to Connect</h3>
+                <div class="contact-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="mailto:your.email@example.com">Email</a>
+                </div>
             </div>
         </div>
     </section>
@@ -378,8 +381,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved. • Built with HTML & CSS</p>
+            <p>&copy; 2024 Your Name. All rights reserved. • Built with HTML, CSS & JavaScript</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
